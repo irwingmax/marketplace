@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Marketplace</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/calculator.js" type="text/javascript"></script>
+    <script src="https://assets.pagar.me/checkout/1.1.0/checkout.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Marketplace</h2>
+        <table class="table">
+            <thead>
+              <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="maria" value="125" class="fantasy">Fantasia do Darth Vader
+                        </label>
+                    </div>
+                </td>
+                <td>
+                    <p>R$ 125,00</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="joao" value="100" class="fantasy">Fantasia do Cafú
+                        </label>
+                    </div>
+                </td>
+                <td>
+                   <p>R$ 100,00</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="cesar" value="150" class="fantasy">Máscara de Cavalo
+                        </label>
+                    </div>
+                </td>
+                <td>
+                    R$ 150,00
+                </td>
+              </tr>
+              <tr>
+                    <td>
+                      <p>Total da compra (incluindo R$ 42,00 de frete: )</p>
+                    </td>
+                    <td>
+                      <p id="result"></p>
+                    </td>
+              </tr>
+              <tr>
+                <td>
+                    <button id="pay-button">Finalizar compra</button>
+                </td>
+
+              </tr>
+            </tbody>
+          </table>
+    </div>
+<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
