@@ -1,7 +1,7 @@
 <?php
 namespace Irwing\Pagarme;
 
-class DividedProfit
+class DividedProfit implements \Irwing\Pagarme\Interfaces\DividedProfitInterface
 {
     private $objectPagarMe;
     private $objectRequest;
@@ -29,7 +29,7 @@ class DividedProfit
         define('PRICE_OF_JOAO_PRODUCT', 10000);
         define('PRICE_OF_CESAR_PRODUCT', 15000);
 
-        $this->objectRequest = new \Irwing\Pagarme\RequestData();
+        $this->objectRequest = new RequestData();
         $this->objectPagarMe = new \PagarMe\Sdk\PagarMe('ak_test_qDURyncApVQmfq7MCbXrv0ZXjIL0sL');
         $this->objectSplitRules = new \PagarMe\Sdk\SplitRule\SplitRuleCollection();
 

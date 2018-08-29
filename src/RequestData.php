@@ -1,7 +1,7 @@
 <?php
 namespace Irwing\Pagarme;
 
-class RequestData
+class RequestData implements \Irwing\Pagarme\Interfaces\RequestDataInterface
 {
     private $allData;
     private $individualData;
