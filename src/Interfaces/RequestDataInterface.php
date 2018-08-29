@@ -3,5 +3,5 @@ namespace Irwing\Pagarme\Interfaces;
 
 interface RequestDataInterface
 {
-    public abstract function getIndividualData();
+    abstract public function getIndividualData();
 }
