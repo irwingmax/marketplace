@@ -20,9 +20,9 @@ class DividedProfit
 
     public function divide()
     {
-        define('MARIA_ID', 're_cjl5hnfe200gm466epaay5cqd');
-        define('JOAO_ID', 're_cjl5ic20b00im466efv9o21jt');
-        define('CESAR_ID', 're_cjl5icnop00io466e93gno3ij');
+        define('MARIA_ID', 're_cjle1g36b01c2l16d8ta4bb2c');
+        define('JOAO_ID', 're_cjle1h4k9012v0k6eq3ifn72y');
+        define('CESAR_ID', 're_cjle1hode01crl16dh5jc2dfc');
         define('API', 'ak_test_qDURyncApVQmfq7MCbXrv0ZXjIL0sL');
 
         define('PRICE_OF_MARIA_PRODUCT', 12500);
