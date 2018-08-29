@@ -23,7 +23,7 @@ var button = document.querySelector('button');
           var xhttp = new XMLHttpRequest();
           xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                if(this.responseText  !== "Fail"){
+                if(this.responseText  !== "Transação não finalizada"){
                   window.location = "templates/success.html";
                 }
                 else{
@@ -33,6 +33,11 @@ var button = document.querySelector('button');
           };
           xhttp.open("POST", "functions.php?t=" + allItemsInformation, true);
           xhttp.send();
+
+          //Executa o loader
+          document.getElementById("container").style.display = "none";
+          document.getElementById("loader").style.display = "block";
+          document.getElementById("loader-text").style.display = "block";
         },
         error: function(err) {
           console.log(err);
