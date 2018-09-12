@@ -8,7 +8,7 @@ class RequestData implements \Irwing\Pagarme\Interfaces\RequestDataInterface
 
     public function getIndividualData()
     {
-        $this->allData = explode(',', $_REQUEST['t']);
+        $this->allData = explode(',', $_REQUEST['allData']);
         $this->individualData = array(
             "cost" => $this->allData[0],
             "token" => $this->allData[1],
