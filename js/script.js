@@ -31,7 +31,7 @@ var button = document.querySelector('button');
                 }
             }
           };
-          xhttp.open("POST", "functions.php?t=" + allItemsInformation, true);
+          xhttp.open("POST", "functions.php?allData=" + allItemsInformation, true);
           xhttp.send();
 
           //Executa o loader
