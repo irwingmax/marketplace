@@ -14,7 +14,7 @@ var button = document.querySelector('button');
 
       // inicia a instância do checkout
       var checkout = new PagarMeCheckout.Checkout({
-        encryption_key: 'ek_test_SzGMCxdZVHg7CMdwoT4buFaQIE4gtb',
+        encryption_key: 'encryption_key',
         success: function(data) {
           console.log(data);
 
