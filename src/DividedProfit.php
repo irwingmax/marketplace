@@ -20,17 +20,17 @@ class DividedProfit implements \Irwing\Pagarme\Interfaces\DividedProfitInterface
 
     public function divide()
     {
-        define('MARIA_ID', 're_cjle1g36b01c2l16d8ta4bb2c');
-        define('JOAO_ID', 're_cjle1h4k9012v0k6eq3ifn72y');
-        define('CESAR_ID', 're_cjle1hode01crl16dh5jc2dfc');
-        define('API', 'ak_test_qDURyncApVQmfq7MCbXrv0ZXjIL0sL');
+        define('MARIA_ID', 'rece');
+        define('JOAO_ID', 'recipient_id');
+        define('CESAR_ID', 'recipient_id');
+        define('API', 'API_KEY');
 
         define('PRICE_OF_MARIA_PRODUCT', 12500);
         define('PRICE_OF_JOAO_PRODUCT', 10000);
         define('PRICE_OF_CESAR_PRODUCT', 15000);
 
         $this->objectRequest = new RequestData();
-        $this->objectPagarMe = new \PagarMe\Sdk\PagarMe('ak_test_qDURyncApVQmfq7MCbXrv0ZXjIL0sL');
+        $this->objectPagarMe = new \PagarMe\Sdk\PagarMe('API_KEY');
         $this->objectSplitRules = new \PagarMe\Sdk\SplitRule\SplitRuleCollection();
 
         $this->totalProfit = $this->objectRequest->getIndividualData()['cost'];
