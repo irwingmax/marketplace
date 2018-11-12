@@ -20,7 +20,7 @@ class DividedProfit implements \Irwing\Pagarme\Interfaces\DividedProfitInterface
 
     public function divide()
     {
-        define('MARIA_ID', 'rece');
+        define('MARIA_ID', 'recipient_id');
         define('JOAO_ID', 'recipient_id');
         define('CESAR_ID', 'recipient_id');
         define('API', 'API_KEY');
